@@ -1,0 +1,28 @@
+$background-main: rgb(10, 12, 20);
+$text-main: rgb(248, 251, 255);
+$section-height: 15em;
+
+* {
+  background-color: $background-main;
+  color: $text-main;
+}
+
+.region {
+  min-height: $section-height;
+}
+
+.dark,
+.dark * {
+  background-color: $background-main;
+  color: $text-main;
+}
+
+.light,
+.light * {
+  background-color: $text-main;
+  color: $background-main;
+}
+
+.heading {
+  font-family: 'Lexend Giga', sans-serif;
+}

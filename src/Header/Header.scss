@@ -1,0 +1,22 @@
+$background-main: rgb(24, 28, 42);
+$text-main: rgb(245, 246, 255);
+$section-height: 400px;
+
+.header-name {
+  margin: 0;
+  text-align: center;
+  font-size: 22pt;
+}
+
+.hero {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.sub-heading {
+  margin: 0;
+  font-size: 14pt;
+}
