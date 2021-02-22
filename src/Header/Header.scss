@@ -1,22 +1,28 @@
-$background-main: rgb(24, 28, 42);
+$background-main: rgb(10, 12, 20);
 $text-main: rgb(245, 246, 255);
+$highlight-color: rgb(129, 74, 11);
+$header-background: #e8ecf8;
 $section-height: 400px;
+
+.main-header {
+  padding: 40px;
+}
 
 .header-name {
   margin: 0;
-  text-align: center;
+  text-align: left;
   font-size: 22pt;
 }
 
 .hero {
   display: flex;
   flex-flow: wrap;
-  justify-content: center;
   align-items: center;
   padding: 30px 10px;
 }
 
 .sub-heading {
   margin: 0;
+  padding-top: 10px;
   font-size: 14pt;
 }

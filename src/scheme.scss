@@ -1,11 +1,9 @@
 $background-main: rgb(10, 12, 20);
 $text-main: rgb(248, 251, 255);
 $section-height: 15em;
-
-* {
-  background-color: $background-main;
-  color: $text-main;
-}
+$highlight-color: rgb(129, 74, 11);
+$light-blue: #c9edff;
+$cream-orange: #ffb451;
 
 .region {
   min-height: $section-height;
@@ -19,10 +17,19 @@ $section-height: 15em;
 
 .light,
 .light * {
-  background-color: $text-main;
+  background-color: white;
   color: $background-main;
 }
 
-.heading {
+.light-blue {
+  background-color: $light-blue;
+}
+
+.cream-orange {
+  background-color: $cream-orange;
+}
+
+.heading,
+.hero {
   font-family: 'Lexend Giga', sans-serif;
 }

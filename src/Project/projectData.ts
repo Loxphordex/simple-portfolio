@@ -8,7 +8,7 @@ export interface IProject {
 
 const pearegrine: IProject = {
   name: 'Pearegrine',
-  theme: 'dark',
+  theme: 'cream-orange',
   images: images.pearegrine
 }
 
