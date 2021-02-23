@@ -42,9 +42,13 @@ export default function Project({name, theme, info, desktopImages, mobileImages 
     <section className={`${theme} region project-container`}>
       <h2 className='project-header'>{name}</h2>
       {renderInfo()}
-      {renderDesktopImages()}
-      <div className='mobile-images-container'>
-        {renderMobileImages()}
+      <div className='images-container'>
+        <div className='desktop-images-container'>
+          {renderDesktopImages()}
+        </div>
+        <div className='mobile-images-container'>
+          {renderMobileImages()}
+        </div>
       </div>
     </section>
   )
