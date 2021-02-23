@@ -1,5 +1,6 @@
 .project-container {
   padding: 0 10px;
+  margin: auto;
 }
 
 .project-image img {
@@ -9,7 +10,16 @@
 }
 
 .project-header {
-  margin: 0;
-  padding: 20px 30px;
+  margin: auto;
+  max-width: 400px;
+  padding: 36px 30px 16px 30px;
   font-family: 'Lexend Giga', sans-serif;
+}
+
+.info-paragraph {
+  font-size: 14pt;
+  margin: auto;
+  padding: 10px 30px;
+  max-width: 400px;
+  font-family: 'Nunito Sans', sans-serif;
 }

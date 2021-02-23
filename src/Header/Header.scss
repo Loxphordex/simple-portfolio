@@ -8,21 +8,26 @@ $section-height: 400px;
   padding: 40px;
 }
 
-.header-name {
-  margin: 0;
-  text-align: left;
-  font-size: 22pt;
-}
-
 .hero {
   display: flex;
   flex-flow: wrap;
   align-items: center;
-  padding: 30px 10px;
+  padding: 30px 0px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.header-name {
+  margin: 0;
+  text-align: left;
+  font-size: 22pt;
+  display: inline-block;
+  width: 100%;
 }
 
 .sub-heading {
   margin: 0;
   padding-top: 10px;
-  font-size: 14pt;
+  font-size: 14pt;  display: inline-block;
+  width: 100%;
 }
