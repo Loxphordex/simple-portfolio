@@ -7,6 +7,7 @@
   width: 100%;
   max-width: 500px;
   margin: 10px auto;
+  margin-bottom: 0;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
@@ -39,6 +40,11 @@
   max-width: 400px;
   padding: 36px 30px 16px 30px;
   font-family: 'Lexend Giga', sans-serif;
+}
+
+.project-header a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .info-paragraph {

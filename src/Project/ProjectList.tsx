@@ -8,7 +8,8 @@ export default function ProjectList() {
       {dataList.map(project => {
         return <Project 
           key={project.name} 
-          name={project.name} 
+          name={project.name}
+          links={project.links}
           theme={project.theme} 
           desktopImages={project.desktopImages} 
           mobileImages={project.mobileImages}

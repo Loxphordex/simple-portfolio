@@ -2,6 +2,7 @@ $background-main: rgb(10, 12, 20);
 $text-main: rgb(248, 251, 255);
 $section-height: 15em;
 $highlight-color: rgb(129, 74, 11);
+$text-dark: rgb(27, 16, 4);
 $light-blue: #c9edff;
 $cream-orange: #ffb451;
 
@@ -27,6 +28,7 @@ $cream-orange: #ffb451;
 
 .cream-orange {
   background-color: $cream-orange;
+  color: $text-dark;
 }
 
 .heading,
