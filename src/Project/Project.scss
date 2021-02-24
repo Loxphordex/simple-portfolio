@@ -58,12 +58,20 @@
 .project-links {
   padding: 10px 30px;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 12pt;
+  font-size: 10pt;
 }
 
-.project-links a {
-  color: inherit;
+.link-border {
+  margin: 8px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.project-link {
   text-decoration: none;
   display: inline-block;
-  width: 100%;
+  width: 100px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
 }
