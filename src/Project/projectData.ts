@@ -24,6 +24,21 @@ const pearegrine: IProject = {
   mobileImages: images.pearegrine.mobileImages
 }
 
+const memoryField: IProject = {
+  name: 'MemoryField',
+  theme: 'light',
+  links: {
+    liveSite: '',
+    githubClient: 'https://github.com/Loxphordex/Memoryfield'
+  },
+  info: [
+    'This is a musical sequencer created using React and the JavaScript Web Audio API.',
+    'It originated as a memorization game like Simon Says. After reworking the project to generate sound, it mutated into a programmable musical instrument.',
+    '(Still a WIP)'
+  ],
+}
+
 export const dataList = [
-  pearegrine
+  pearegrine,
+  memoryField
 ]

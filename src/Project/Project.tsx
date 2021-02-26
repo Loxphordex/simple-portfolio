@@ -54,14 +54,14 @@ export default function Project({name, theme, links, info, desktopImages, mobile
       </div>
       <div className='project-links '>
         <div className='link-border'>
-          <a className='project-link drop-shadow' href={links.liveSite} target='blank'>Live Site</a>
+          <a className='project-link live-site-link' href={links.liveSite} target='blank'>Live Site</a>
         </div>
         <div className='link-border'>
-          <a className='project-link drop-shadow' href={links.githubClient} target='blank'>Github Client</a>
+          <a className='project-link' href={links.githubClient} target='blank'>Github Client</a>
         </div>
         {links.githubServer &&
           <div className='link-border'>
-            <a className='project-link drop-shadow' href={links.githubServer} target='blank'>Github Server</a>
+            <a className='project-link' href={links.githubServer} target='blank'>Github Server</a>
           </div>
         }
       </div>

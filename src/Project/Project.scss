@@ -1,6 +1,7 @@
 .project-container {
   padding: 0 10px;
   margin: auto;
+  padding-bottom: 20px;
 }
 
 .images-container {
@@ -70,8 +71,23 @@
 .project-link {
   text-decoration: none;
   display: inline-block;
-  width: 100px;
+  width: 50%;
+  min-width: 100px;
   border-radius: 10px;
   font-weight: 600;
   text-align: center;
+  padding: 1px;
+}
+
+.live-site-link {
+  width: 85%;
+  min-width: 200px;
+  border-radius: 2px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12pt;
+  margin-bottom: 10px;
 }
