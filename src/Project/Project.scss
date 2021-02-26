@@ -91,3 +91,13 @@
   font-size: 12pt;
   margin-bottom: 10px;
 }
+
+@media only screen and (min-width: 768px) {
+  .project-link {
+    max-width: 130px;
+  }
+
+  .live-site-link {
+    max-width: 220px;
+  }
+}

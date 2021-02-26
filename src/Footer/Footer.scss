@@ -19,3 +19,11 @@
 .personal-link-icon {
   max-width: 50px;
 }
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    margin: auto;
+    padding-top: 50px;
+    max-width: 200px;
+  }
+}

@@ -28,7 +28,7 @@ const memoryField: IProject = {
   name: 'MemoryField',
   theme: 'light',
   links: {
-    liveSite: '',
+    liveSite: 'https://memoryfield.now.sh/',
     githubClient: 'https://github.com/Loxphordex/Memoryfield'
   },
   info: [
