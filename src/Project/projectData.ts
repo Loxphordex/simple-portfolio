@@ -1,4 +1,5 @@
 import { images, IImage } from '../images/imageStore'
+import { info } from '../info/info'
 
 export interface IProject {
   name: string
@@ -17,9 +18,7 @@ const pearegrine: IProject = {
     githubClient: 'https://github.com/Loxphordex/k-client',
     githubServer: 'https://github.com/Loxphordex/k-server'
   },
-  info: [
-    'Pearegrine is a clothing company based in New York. I created this website using React and implemented transaction functionality via Stripe API.'
-  ],
+  info: info.pearegrine,
   desktopImages: images.pearegrine.desktopImages,
   mobileImages: images.pearegrine.mobileImages
 }
@@ -31,11 +30,7 @@ const memoryField: IProject = {
     liveSite: 'https://memoryfield.now.sh/',
     githubClient: 'https://github.com/Loxphordex/Memoryfield'
   },
-  info: [
-    'This is a musical sequencer created using React and the JavaScript Web Audio API.',
-    'It originated as a memorization game like Simon Says. After reworking the project to generate sound, it mutated into a programmable musical instrument.',
-    '(Still a WIP)'
-  ],
+  info: info.memoryField,
 }
 
 export const dataList = [

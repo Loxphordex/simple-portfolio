@@ -39,18 +39,24 @@ export default function Project({name, theme, links, info, desktopImages, mobile
   }
 
   return (
-    <section className={`${theme} region project-container`}>
-      <h2 className='project-header'>
-        <a href={links.liveSite} target='blank'>{name}</a>
-      </h2>
-      {renderInfo()}
-      <div className='images-container'>
-        <div className='desktop-images-container'>
-          {renderDesktopImages()}
-        </div>
-        <div className='mobile-images-container'>
-          {renderMobileImages()}
-        </div>
+    <div className={`${theme} region project-container`}>
+      <div className='display-container'>
+        <section className='main-display'>
+          <h2 className='project-header'>
+            <a href={links.liveSite} target='blank'>{name}</a>
+          </h2>
+          {renderInfo()}
+        </section>
+        <section className='secondary-display'>
+          <div className='images-container'>
+            <div className='desktop-images-container'>
+              {renderDesktopImages()}
+            </div>
+            <div className='mobile-images-container'>
+              {renderMobileImages()}
+            </div>
+          </div>
+        </section>
       </div>
       <div className='project-links '>
         <div className='link-border'>
@@ -65,6 +71,6 @@ export default function Project({name, theme, links, info, desktopImages, mobile
           </div>
         }
       </div>
-    </section>
+    </div>
   )
 }

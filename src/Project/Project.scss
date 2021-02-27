@@ -93,6 +93,23 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .display-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row-reverse;
+  }
+
+  .secondary-display {
+    min-width: 500px;
+    margin-right: 10px;
+  }
+
+  .info-paragraph {
+    font-size: 12pt;
+  }
+
   .project-link {
     max-width: 130px;
   }

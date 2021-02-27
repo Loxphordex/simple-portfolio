@@ -4,7 +4,7 @@ import './Project.scss'
 
 export default function ProjectList() {
   return (
-    <section className='project-list-container'>
+    <div className='project-list-container'>
       {dataList.map(project => {
         return <Project 
           key={project.name} 
@@ -16,6 +16,6 @@ export default function ProjectList() {
           info={project.info} 
         />
       })}
-    </section>
+    </div>
   )
 }
