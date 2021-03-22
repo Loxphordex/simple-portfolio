@@ -93,21 +93,31 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .project-container {
+    padding: 0;
+  }
   .display-container {
-    display: flex;
     margin: auto;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row-reverse;
+    margin-bottom: 50px;
+  }
+
+  .main-display {
+    padding-left: 14px;
+    min-width: 415px;
   }
 
   .secondary-display {
     min-width: 500px;
-    margin-right: 10px;
+    width: 100%;
+  }
+
+  .project-header {
+    max-width: 510px;
   }
 
   .info-paragraph {
     font-size: 12pt;
+    max-width: 510px;
   }
 
   .project-link {
@@ -116,5 +126,9 @@
 
   .live-site-link {
     max-width: 220px;
+  }
+
+  .images-container {
+    margin-bottom: 20px;
   }
 }

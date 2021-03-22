@@ -27,7 +27,7 @@ $dark-orange: rgb(14, 12, 11);
 }
 
 .light .live-site-link {
-  background-color: $cream-orange;
+  background-color: rgb(221, 221, 221);
 }
 
 .light-blue {
@@ -64,4 +64,7 @@ $dark-orange: rgb(14, 12, 11);
 
 .drop-shadow {
   box-shadow: 0px 3px 20px -12px $text-dark;
+}
+
+@media only screen and (min-width: 768px) {
 }

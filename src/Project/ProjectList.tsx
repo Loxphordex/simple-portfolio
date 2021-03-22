@@ -13,6 +13,7 @@ export default function ProjectList() {
           theme={project.theme} 
           desktopImages={project.desktopImages} 
           mobileImages={project.mobileImages}
+          otherImages={project.otherImages}
           info={project.info} 
         />
       })}

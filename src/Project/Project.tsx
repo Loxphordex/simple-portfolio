@@ -1,7 +1,7 @@
 import { IProject } from './projectData'
 import { v4 as uuidv4 } from 'uuid'
 
-export default function Project({name, theme, links, info, desktopImages, mobileImages }: IProject) {
+export default function Project({name, theme, links, info, desktopImages, mobileImages, otherImages }: IProject) {
   const renderDesktopImages = () => {
     if (desktopImages) {
       return desktopImages.map(image => {
@@ -20,6 +20,18 @@ export default function Project({name, theme, links, info, desktopImages, mobile
         return (
           <div key={image.alt} className='project-image mobile-image'>
             <img src={image.src} alt={image.alt} />
+          </div>
+        )
+      })
+    }
+  }
+
+  const renderOtherImages = () => {
+    if (otherImages) {
+      return otherImages.map(image => {
+        return (
+          <div key={image.alt} className='project-image other-image'>
+            <img src={image.src} alt={image.alt} />            
           </div>
         )
       })
@@ -55,21 +67,24 @@ export default function Project({name, theme, links, info, desktopImages, mobile
             <div className='mobile-images-container'>
               {renderMobileImages()}
             </div>
+            <div className='other-images-container'>
+              {renderOtherImages()}
+            </div>
+          </div>
+          <div className='project-links '>
+            <div className='link-border'>
+              <a className='project-link live-site-link' href={links.liveSite} target='blank'>Live Site</a>
+            </div>
+            <div className='link-border'>
+              <a className='project-link' href={links.githubClient} target='blank'>Github Client</a>
+            </div>
+            {links.githubServer &&
+              <div className='link-border'>
+                <a className='project-link' href={links.githubServer} target='blank'>Github Server</a>
+              </div>
+            }
           </div>
         </section>
-      </div>
-      <div className='project-links '>
-        <div className='link-border'>
-          <a className='project-link live-site-link' href={links.liveSite} target='blank'>Live Site</a>
-        </div>
-        <div className='link-border'>
-          <a className='project-link' href={links.githubClient} target='blank'>Github Client</a>
-        </div>
-        {links.githubServer &&
-          <div className='link-border'>
-            <a className='project-link' href={links.githubServer} target='blank'>Github Server</a>
-          </div>
-        }
       </div>
     </div>
   )

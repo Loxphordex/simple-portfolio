@@ -8,11 +8,12 @@ export interface IProject {
   info?: string[]
   desktopImages?: IImage[]
   mobileImages?: IImage[]
+  otherImages?: IImage[]
 }
 
 const pearegrine: IProject = {
   name: 'Pearegrine',
-  theme: 'cream-orange',
+  theme: 'light',
   links: {
     liveSite: 'https://pearegrine.com/gallery/all?page=1',
     githubClient: 'https://github.com/Loxphordex/k-client',
@@ -20,7 +21,9 @@ const pearegrine: IProject = {
   },
   info: info.pearegrine,
   desktopImages: images.pearegrine.desktopImages,
-  mobileImages: images.pearegrine.mobileImages
+  mobileImages: images.pearegrine.mobileImages,
+  otherImages: images.pearegrine.other
+
 }
 
 const memoryField: IProject = {

@@ -1,10 +1,13 @@
 import pearegrineDesktop from './pearegrine_desktop_1.png'
 import pearegrineMobile from './pearegrine_mobile_1.png'
 import pearegrineMobileMenu from './pearegrine_mobile_2.png'
+import grayBlockTee from './gray-block-tee.jpg'
+import pearegrineLogo from './Pear.png'
 
 interface IImages {
-  desktopImages: IImage[],
+  desktopImages: IImage[]
   mobileImages: IImage[]
+  other?: IImage[]
 }
 
 export interface IImage {
@@ -17,6 +20,10 @@ const pearegrine: IImages = {
     {
       src: pearegrineDesktop,
       alt: 'pearegrine desktop example',
+    },
+    {
+      src: grayBlockTee,
+      alt: 'gray block tee shirt'
     }
   ],
   mobileImages: [
@@ -26,9 +33,15 @@ const pearegrine: IImages = {
     },
     {
       src: pearegrineMobileMenu,
-      alt: 'pearegrine mobile menu example',
+      alt: 'pearegrine mobile menu',
     } 
-  ]
+  ],
+  // other: [
+  //   {
+  //     src: pearegrineLogo,
+  //     alt: 'Pearegrine tee shirt company logo'
+  //   }
+  // ]
 }
 
 export const images = {
