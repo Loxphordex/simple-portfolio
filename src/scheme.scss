@@ -1,11 +1,13 @@
 $background-main: rgb(10, 12, 20);
 $text-main: rgb(248, 251, 255);
-$section-height: 15em;
+$section-height: 14em;
 $highlight-color: rgb(129, 74, 11);
 $text-dark: rgb(27, 16, 4);
 $light-blue: #c9edff;
 $cream-orange: #ffb451;
 $dark-orange: rgb(14, 12, 11);
+$strawberry: #ed6464;
+$mint: #b0ffd2;
 
 .region {
   min-height: $section-height;
@@ -54,6 +56,20 @@ $dark-orange: rgb(14, 12, 11);
 
 .dark-orange .project-link {
   background-color: $cream-orange;
+  color: $text-dark;
+}
+
+.strawberry {
+  background-color: $strawberry;
+  color: $text-dark;
+}
+
+.strawberry .project-link {
+  color: $text-dark;
+}
+
+.mint {
+  background-color: $mint;
   color: $text-dark;
 }
 

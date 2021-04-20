@@ -1,12 +1,17 @@
+// Pearegrine imports
+import pearLogo from './pearegrineLogo.png'
 import pearegrineDesktop from './pearegrine_desktop_1.png'
 import pearegrineMobile from './pearegrine_mobile_1.png'
 import pearegrineMobileMenu from './pearegrine_mobile_2.png'
 import grayBlockTee from './gray-block-tee.jpg'
-import pearegrineLogo from './Pear.png'
+
+// Memoryfield imports
+import memoryLogo from './MFTemp.jpg'
 
 interface IImages {
-  desktopImages: IImage[]
-  mobileImages: IImage[]
+  logoImage?: IImage
+  desktopImages?: IImage[]
+  mobileImages?: IImage[]
   other?: IImage[]
 }
 
@@ -16,6 +21,10 @@ export interface IImage {
 }
 
 const pearegrine: IImages = {
+  logoImage: {
+    src: pearLogo,
+    alt: 'Pearegrine Logo'
+  },
   desktopImages: [
     {
       src: pearegrineDesktop,
@@ -35,15 +44,17 @@ const pearegrine: IImages = {
       src: pearegrineMobileMenu,
       alt: 'pearegrine mobile menu',
     } 
-  ],
-  // other: [
-  //   {
-  //     src: pearegrineLogo,
-  //     alt: 'Pearegrine tee shirt company logo'
-  //   }
-  // ]
+  ]
+}
+
+const memoryfield: IImages = {
+  logoImage: {
+    src: memoryLogo,
+    alt: 'Memory field logo'
+  }
 }
 
 export const images = {
-  pearegrine
+  pearegrine,
+  memoryfield
 }

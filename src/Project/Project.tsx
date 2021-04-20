@@ -1,7 +1,17 @@
 import { IProject } from './projectData'
 import { v4 as uuidv4 } from 'uuid'
 
-export default function Project({name, theme, links, info, desktopImages, mobileImages, otherImages }: IProject) {
+export default function Project({name, theme, links, info, logoImage, desktopImages, mobileImages, otherImages }: IProject) {
+  const renderLogo = () => {
+    if (logoImage) {
+      return (
+        <div className='logo-image-container'>
+          <img src={logoImage.src} alt={logoImage.alt} />
+        </div>
+      )
+    }
+  }
+
   const renderDesktopImages = () => {
     if (desktopImages) {
       return desktopImages.map(image => {
@@ -51,15 +61,18 @@ export default function Project({name, theme, links, info, desktopImages, mobile
   }
 
   return (
-    <div className={`${theme} region project-container`}>
+    <div className={`${theme} region project-container drop-shadow`}>
       <div className='display-container'>
         <section className='main-display'>
           <h2 className='project-header'>
-            <a href={links.liveSite} target='blank'>{name}</a>
+            {/* <a href={links.liveSite} target='blank'>{name}</a> */}
+            <a href={links.liveSite} target='_blank' rel='noreferrer'>
+              {renderLogo()}
+            </a>
           </h2>
-          {renderInfo()}
+          {/* {renderInfo()} */}
         </section>
-        <section className='secondary-display'>
+        {/* <section className='secondary-display'>
           <div className='images-container'>
             <div className='desktop-images-container'>
               {renderDesktopImages()}
@@ -84,7 +97,7 @@ export default function Project({name, theme, links, info, desktopImages, mobile
               </div>
             }
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   )

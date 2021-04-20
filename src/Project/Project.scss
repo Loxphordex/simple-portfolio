@@ -1,7 +1,13 @@
 .project-container {
-  padding: 0 10px;
   margin: auto;
-  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  max-width: 320px;
+}
+
+.logo-image-container img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 .images-container {
@@ -39,7 +45,7 @@
 .project-header {
   margin: auto;
   max-width: 400px;
-  padding: 36px 30px 16px 30px;
+  padding: 36px 30px 30px 30px;
   font-family: 'Lexend Giga', sans-serif;
 }
 
