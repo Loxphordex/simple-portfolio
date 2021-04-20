@@ -10,7 +10,8 @@ export default function ProjectList() {
           key={project.name} 
           name={project.name}
           links={project.links}
-          theme={project.theme} 
+          theme={project.theme}
+          logoImage={project.logoImage}
           desktopImages={project.desktopImages} 
           mobileImages={project.mobileImages}
           otherImages={project.otherImages}
