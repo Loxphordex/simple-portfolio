@@ -5,6 +5,7 @@ export interface IProject {
   name: string
   theme: string
   links: { liveSite: string, githubClient: string, githubServer?: string }
+  fadeInKey?: number
   info?: string[]
   logoImage?: IImage
   desktopImages?: IImage[]
@@ -25,7 +26,6 @@ const pearegrine: IProject = {
   desktopImages: images.pearegrine.desktopImages,
   mobileImages: images.pearegrine.mobileImages,
   otherImages: images.pearegrine.other
-
 }
 
 const memoryField: IProject = {

@@ -5,7 +5,7 @@ import './Project.scss'
 export default function ProjectList() {
   return (
     <div className='project-list-container'>
-      {dataList.map(project => {
+      {dataList.map((project, i) => {
         return <Project 
           key={project.name} 
           name={project.name}
@@ -15,7 +15,8 @@ export default function ProjectList() {
           desktopImages={project.desktopImages} 
           mobileImages={project.mobileImages}
           otherImages={project.otherImages}
-          info={project.info} 
+          info={project.info}
+          fadeInKey={i}
         />
       })}
     </div>

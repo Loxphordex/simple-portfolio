@@ -1,0 +1,90 @@
+$fadeTransition: 200ms;
+$fadeTextDelay: 0ms;
+$fade0Delay: 100ms;
+$fade1Delay: 300ms;
+
+/* Note: fill-mode must be set to "both" in order for the element to retain its animation state at 0% BEFORE the animation starts*/
+/* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+.fade-text {
+  animation: $fadeTransition ease-in-out $fadeTextDelay 1 normal both running fadeInNoTranslate;
+  -o-animation: $fadeTransition ease-in-out $fadeTextDelay 1 normal both running fadeInNoTranslate;
+  -moz-animation: $fadeTransition ease-in-out $fadeTextDelay 1 normal both running fadeInNoTranslate;
+  -webkit-animation: $fadeTransition ease-in-out $fadeTextDelay 1 normal both running fadeInNoTranslate;
+}
+
+.fade-0 {
+  animation: $fadeTransition ease-in-out $fade0Delay 1 normal both running fadeIn;
+  -o-animation: $fadeTransition ease-in-out $fade0Delay 1 normal both running fadeIn;
+  -moz-animation: $fadeTransition ease-in-out $fade0Delay 1 normal both running fadeIn;
+  -webkit-animation: $fadeTransition ease-in-out $fade0Delay 1 normal both running fadeIn;
+}
+
+.fade-1 {
+  animation: $fadeTransition ease-in-out $fade1Delay 1 normal both running fadeIn;
+  -o-animation: $fadeTransition ease-in-out $fade1Delay 1 normal both running fadeIn;
+  -moz-animation: $fadeTransition ease-in-out $fade1Delay 1 normal both running fadeIn;
+  -webkit-animation: $fadeTransition ease-in-out $fade1Delay 1 normal both running fadeIn;
+}
+
+@keyframes fadeInNoTranslate {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes fadeInNoTranslate {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes fadeInNoTranslate {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeInNoTranslate {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0px);
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}

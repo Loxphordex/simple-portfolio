@@ -1,7 +1,7 @@
 import { IProject } from './projectData'
 import { v4 as uuidv4 } from 'uuid'
 
-export default function Project({name, theme, links, info, logoImage, desktopImages, mobileImages, otherImages }: IProject) {
+export default function Project({name, theme, links, info, logoImage, desktopImages, mobileImages, otherImages, fadeInKey }: IProject) {
   const renderLogo = () => {
     if (logoImage) {
       return (
@@ -61,7 +61,7 @@ export default function Project({name, theme, links, info, logoImage, desktopIma
   }
 
   return (
-    <div className={`${theme} region project-container drop-shadow`}>
+    <div className={`${theme} region project-container drop-shadow fade-${fadeInKey}`}>
       <div className='display-container'>
         <section className='main-display'>
           <h2 className='project-header'>
