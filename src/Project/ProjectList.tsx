@@ -59,11 +59,11 @@ export default function ProjectList() {
     <div className={`project-list-container ${isProjectOpen() ? 'open-project-format' : String()}`}>
       { !isProjectOpen() && renderAllProjects()}
 
-      <div className='open-project-container'>
+      <div className={`open-project-container ${!isProjectOpen() ? 'no-display' : String()}`}>
         { isProjectOpen() && renderOpenProject()}
       </div>
 
-      <div className='closed-project-container'>
+      <div className={`closed-project-container ${!isProjectOpen() ? 'no-display' : String()}`}>
         { isProjectOpen() && renderClosedProjects()}
       </div>
     </div>
