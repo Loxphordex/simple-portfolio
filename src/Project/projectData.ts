@@ -11,6 +11,8 @@ export interface IProject {
   desktopImages?: IImage[]
   mobileImages?: IImage[]
   otherImages?: IImage[]
+  openProject?: string
+  setOpenProject?: React.Dispatch<React.SetStateAction<string>>
 }
 
 const pearegrine: IProject = {
@@ -21,6 +23,7 @@ const pearegrine: IProject = {
     githubClient: 'https://github.com/Loxphordex/k-client',
     githubServer: 'https://github.com/Loxphordex/k-server'
   },
+  fadeInKey: 0,
   info: info.pearegrine,
   logoImage: images.pearegrine.logoImage,
   desktopImages: images.pearegrine.desktopImages,
@@ -35,6 +38,7 @@ const memoryField: IProject = {
     liveSite: 'https://memoryfield.now.sh/',
     githubClient: 'https://github.com/Loxphordex/Memoryfield'
   },
+  fadeInKey: 1,
   info: info.memoryField,
   logoImage: images.memoryfield.logoImage
 }

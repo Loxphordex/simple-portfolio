@@ -1,8 +1,13 @@
+.project-list-container {
+  position: relative;
+}
+
 .project-container {
   margin: auto;
   margin-bottom: 40px;
   border-radius: 5px;
   max-width: 320px;
+  cursor: pointer;
 }
 
 .logo-image-container img {
@@ -117,7 +122,6 @@
   }
 
   .main-display {
-    padding-left: 14px;
     min-width: 415px;
   }
 
@@ -145,5 +149,33 @@
 
   .images-container {
     margin-bottom: 20px;
+  }
+
+  .open-project-format {
+    flex-flow: column;
+  }
+
+  .closed-project-container {
+    height: 120px;
+  }
+
+  .open-project {
+    max-width: 100%;
+    width: 100%
+  }
+
+  .closed-project {
+    max-width: 200px;
+    max-height: 120px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .closed-project .main-display {
+    min-width: 0px;
+  }
+
+  .closed-project img {
+    max-width: 120px;
   }
 }
