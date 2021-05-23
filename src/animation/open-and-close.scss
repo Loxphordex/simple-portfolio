@@ -1,0 +1,90 @@
+// .open-project {
+//   animation: 100ms cubic-bezier(0,1.04,.83,1.01) 0ms 1 normal both running moveUpAndExpand;
+// }
+
+// .open-project .main-display {
+//   animation: 1000ms ease-in-out 0ms 1 normal both running expandAndMoveTItle;
+// }
+
+// .open-project .project-header {
+//   animation: 1000ms ease-in-out 0ms 1 normal both running managePadding;
+// }
+
+.closed-project {
+  animation: none;
+}
+
+@keyframes moveUpAndExpand {
+  0% {
+    opacity: 0;
+    width: 20%;
+    max-width: 200px;
+    height: 80px;
+    max-height: 120px;
+    min-height: 0px;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 1;
+    width: 20%;
+    max-width: 200px;
+    height: 80px;
+    min-height: 0px;
+    transform: translateY(0px);
+  }
+  100% {
+    width: 100%;
+    max-height: 1000px;
+    min-height: 550px;
+    height: 550px;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expandAndMoveTItle {
+  0% {
+    opacity: 0;
+    width: 120px;
+    max-width: 120px;
+    min-width: 0px;
+    height: 120px;
+    padding: 5px;
+    margin-left: 40px;
+  }
+  40% {
+    opacity: 1;
+    padding: 5px;
+    width: 120px;
+    max-width: 120px;
+    margin-left: 40px;
+  }
+  100% {
+    width: 30%;
+    width: 200px;
+    max-width: 200px;
+    min-width: 0px;
+    padding: 5px;
+    margin-left: 40px;
+  }
+}
+
+@keyframes managePadding {
+  0% {
+    padding: 10px
+  }
+  40% {
+
+  }
+  100% {
+    padding: 10px
+  }
+}
+
+@keyframes moveDownAndShrink {
+  0% {
+
+  }
+  100% {
+
+  }
+}

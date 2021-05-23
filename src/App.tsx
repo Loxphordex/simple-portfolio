@@ -3,7 +3,8 @@ import Header from './Header/Header'
 import ProjectList from './Project/ProjectList'
 import Footer from './Footer/Footer'
 import './scheme.scss'
-import './fade-in.scss'
+import './animation/fade-in.scss'
+import './animation/open-and-close.scss'
 
 function App() {
   return (
