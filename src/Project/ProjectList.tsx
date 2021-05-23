@@ -39,6 +39,7 @@ export default function ProjectList() {
       info={project.info}
       fadeInKey={project.fadeInKey}
       openProject={openProject}
+      techIcons={project.techIcons}
       setOpenProject={setOpenProject}
     /> 
   }
@@ -55,6 +56,10 @@ export default function ProjectList() {
     return true
   }
 
+  const scrollToTop = () => {
+    window.scrollTo(0 ,0)
+  }
+
   return (
     <div className={`project-list-container ${isProjectOpen() ? 'open-project-format' : String()}`}>
       { !isProjectOpen() && renderAllProjects()}
@@ -63,7 +68,7 @@ export default function ProjectList() {
         { isProjectOpen() && renderOpenProject()}
       </div>
 
-      <div className={`closed-project-container ${!isProjectOpen() ? 'no-display' : String()}`}>
+      <div onClick={scrollToTop} className={`closed-project-container ${!isProjectOpen() ? 'no-display' : String()}`}>
         { isProjectOpen() && renderClosedProjects()}
       </div>
     </div>

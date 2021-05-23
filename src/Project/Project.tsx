@@ -12,6 +12,7 @@ export default function Project({
   otherImages,
   fadeInKey,
   openProject,
+  techIcons,
   setOpenProject
 }: IProject) {
   const renderLogo = () => {
@@ -99,6 +100,18 @@ export default function Project({
     }
   };
 
+  const renderTechIcons = () => {
+    if (techIcons) {
+      return (
+        <div className='tech-icons-container'>
+          {techIcons.map(iconClassName => {
+            return <i className={iconClassName} />
+          })}
+        </div>
+      )
+    }
+  }
+
   return (
     <div
       className={`${theme} region project-container drop-shadow fade-${fadeInKey} ${isProjectOpen()}`}
@@ -109,21 +122,14 @@ export default function Project({
           <h2 className="project-header">
             {/* <a href={links.liveSite} target='blank'>{name}</a> */}
             {renderLogo()}
+            {renderTechIcons()}
           </h2>
         </section>
         {isProjectOpen() === 'open-project' && 
           <section className='secondary-display'>
-            {/* <div className='images-container'>
-              <div className='desktop-images-container'>
-                {renderDesktopImages()}
-              </div>
-              <div className='mobile-images-container'>
-                {renderMobileImages()}
-              </div>
-              <div className='other-images-container'>
-                {renderOtherImages()}
-              </div>
-            </div> */}
+            <div className='secondary-main-body'>
+              {renderInfo()}
+            </div>
             <div className='project-links '>
               <div className='link-border'>
                 <a className='project-link live-site-link' href={links.liveSite} target='blank'>Live Site</a>
@@ -137,6 +143,17 @@ export default function Project({
                 </div>
               }
             </div>
+            {/* <div className='images-container'>
+              <div className='desktop-images-container'>
+                {renderDesktopImages()}
+              </div>
+              <div className='mobile-images-container'>
+                {renderMobileImages()}
+              </div>
+              <div className='other-images-container'>
+                {renderOtherImages()}
+              </div>
+            </div> */}
           </section>
         }
       </div>

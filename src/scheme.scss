@@ -6,8 +6,9 @@ $text-dark: rgb(27, 16, 4);
 $light-blue: #c9edff;
 $cream-orange: #ffb451;
 $dark-orange: rgb(14, 12, 11);
-$strawberry: #ed6464;
+$strawberry: #e19696;
 $mint: #b0ffd2;
+$pearBlue: #d7f8ff;
 
 .dark,
 .dark * {
@@ -66,6 +67,15 @@ $mint: #b0ffd2;
 
 .mint {
   background-color: $mint;
+  color: $text-dark;
+}
+
+.pearBlue {
+  background-color: $pearBlue;
+  color: $text-dark;
+}
+
+.pearBlue .project-link {
   color: $text-dark;
 }
 

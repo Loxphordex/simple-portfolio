@@ -12,14 +12,15 @@ export interface IProject {
   mobileImages?: IImage[]
   otherImages?: IImage[]
   openProject?: string
+  techIcons?: string[]
   setOpenProject?: React.Dispatch<React.SetStateAction<string>>
 }
 
 const pearegrine: IProject = {
   name: 'Pearegrine',
-  theme: 'strawberry',
+  theme: 'pearBlue',
   links: {
-    liveSite: 'https://pearegrine.com/gallery/all?page=1',
+    liveSite: 'https://pearegrine.com',
     githubClient: 'https://github.com/Loxphordex/k-client',
     githubServer: 'https://github.com/Loxphordex/k-server'
   },
@@ -28,7 +29,14 @@ const pearegrine: IProject = {
   logoImage: images.pearegrine.logoImage,
   desktopImages: images.pearegrine.desktopImages,
   mobileImages: images.pearegrine.mobileImages,
-  otherImages: images.pearegrine.other
+  otherImages: images.pearegrine.other,
+  techIcons: [
+    'devicon-javascript-plain',
+    'devicon-react-original-wordmark',
+    'devicon-express-original',
+    'devicon-postgresql-plain-wordmark',
+    'devicon-heroku-original-wordmark'
+  ]
 }
 
 const memoryField: IProject = {
