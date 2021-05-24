@@ -48,7 +48,13 @@ const memoryField: IProject = {
   },
   fadeInKey: 1,
   info: info.memoryField,
-  logoImage: images.memoryfield.logoImage
+  logoImage: images.memoryfield.logoImage,
+  techIcons: [
+    'devicon-html5-plain',
+    'devicon-css3-plain',
+    'devicon-javascript-plain',
+    'devicon-heroku-original-wordmark'
+  ]
 }
 
 export const dataList = [
