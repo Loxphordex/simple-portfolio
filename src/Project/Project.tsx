@@ -1,5 +1,6 @@
 import { IProject } from "./projectData";
 import { v4 as uuidv4 } from "uuid";
+import { IImage } from "../images/imageStore";
 
 export default function Project({
   name,
@@ -50,39 +51,31 @@ export default function Project({
 
   const renderDesktopImages = () => {
     if (desktopImages) {
-      return desktopImages.map((image) => {
-        return (
-          <div key={image.alt} className="project-image desktop-image">
-            <img src={image.src} alt={image.alt} />
-          </div>
-        );
-      });
+      return renderImages(desktopImages, 'project-image desktop-image')
     }
   };
 
   const renderMobileImages = () => {
     if (mobileImages) {
-      return mobileImages.map((image) => {
-        return (
-          <div key={image.alt} className="project-image mobile-image">
-            <img src={image.src} alt={image.alt} />
-          </div>
-        );
-      });
+      return renderImages(mobileImages, 'project-image mobile-image')
     }
   };
 
   const renderOtherImages = () => {
     if (otherImages) {
-      return otherImages.map((image) => {
-        return (
-          <div key={image.alt} className="project-image other-image">
-            <img src={image.src} alt={image.alt} />
-          </div>
-        );
-      });
+      return renderImages(otherImages, 'project-image other-image')
     }
   };
+
+  const renderImages = (images: IImage[], className: string) => {
+    return images.map(image => {
+      return (
+        <div key={image.alt} className={className}>
+          <img src={image.src} alt={image.alt} />
+        </div>
+      )
+    })
+  }
 
   const renderInfo = () => {
     if (info) {
@@ -143,17 +136,11 @@ export default function Project({
                 </div>
               }
             </div>
-            {/* <div className='images-container'>
-              <div className='desktop-images-container'>
-                {renderDesktopImages()}
-              </div>
-              <div className='mobile-images-container'>
-                {renderMobileImages()}
-              </div>
-              <div className='other-images-container'>
-                {renderOtherImages()}
-              </div>
-            </div> */}
+            <div className='images-container'>
+              {renderDesktopImages()}
+              {renderMobileImages()}
+              {renderOtherImages()}
+            </div>
           </section>
         }
       </div>
