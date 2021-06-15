@@ -135,11 +135,11 @@ export default function Project({
                   <a className='project-link' href={links.githubServer} target='blank'>Github Server</a>
                 </div>
               }
-            </div>
             <div className='images-container'>
               {renderDesktopImages()}
               {renderMobileImages()}
               {renderOtherImages()}
+            </div>
             </div>
           </section>
         }
