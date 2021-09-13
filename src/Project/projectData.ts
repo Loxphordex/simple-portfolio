@@ -49,6 +49,7 @@ const memoryField: IProject = {
   fadeInKey: 1,
   info: info.memoryField,
   logoImage: images.memoryfield.logoImage,
+  desktopImages: images.memoryfield.desktopImages,
   techIcons: [
     'devicon-html5-plain',
     'devicon-css3-plain',
