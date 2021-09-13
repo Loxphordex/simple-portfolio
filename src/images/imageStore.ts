@@ -7,6 +7,7 @@ import grayBlockTee from './gray-block-tee.jpg'
 
 // Memoryfield imports
 import memoryLogo from './MFTemp.jpg'
+import memoryExample from './Memoryfield_example.jpg'
 
 interface IImages {
   logoImage?: IImage
@@ -51,7 +52,13 @@ const memoryfield: IImages = {
   logoImage: {
     src: memoryLogo,
     alt: 'Memory field logo'
-  }
+  },
+  desktopImages: [
+    {
+      src: memoryExample,
+      alt: 'Memory Field Synth Example'
+    }
+  ]
 }
 
 export const images = {
