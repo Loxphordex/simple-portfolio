@@ -98,7 +98,7 @@ export default function Project({
       return (
         <div className='tech-icons-container'>
           {techIcons.map(iconClassName => {
-            return <i className={iconClassName} />
+            return <i key={iconClassName} className={iconClassName} />
           })}
         </div>
       )
